@@ -1,0 +1,27 @@
+package com.applicationscope.db;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+public class DBConnection {
+
+	Connection openConnection() {
+
+		try {
+			Class.forName("com.mysql.jdbc.Driver"); // Step 1
+			Connection connection = DriverManager.getConnection(
+					"jdbc:mysql://localhost:3306/employee_db?characterEncoding=latin1&useConfigs=maxPerformance",
+					"root", "password"); // Step 2
+
+			return connection;
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		return null;
+	}
+
+	boolean closeConnection() {
+		return false;
+	}
+}

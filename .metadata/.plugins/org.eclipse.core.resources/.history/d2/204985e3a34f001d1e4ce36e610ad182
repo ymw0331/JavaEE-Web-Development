@@ -1,0 +1,16 @@
+package com.applicationscope.db;
+
+import java.sql.Connection;
+
+public class DBConnection {
+
+	Connection openConnection() {
+
+		return null;
+	}
+
+	boolean closeConnection() {
+
+		return false;
+	}
+}

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	id="WebApp_ID" version="2.5">
+	<display-name>ApplicationScopeExample</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+	<context-param>
+		<param-name>db-ip</param-name>
+		<param-value>127.0.0.1</param-value>
+	</context-param>
+	<context-param>
+		<param-name>db-port</param-name>
+		<param-value>3306</param-value>
+	</context-param>
+	<servlet>
+		<description></description>
+		<display-name>ContextParamExample</display-name>
+		<servlet-name>ContextParamExample</servlet-name>
+		<servlet-class>com.applicatioscope.ContextParamExample</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ContextParamExample</servlet-name>
+		<url-pattern>/ContextParamExample</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<description></description>
+		<display-name>ApplicationScopeServlet1</display-name>
+		<servlet-name>ApplicationScopeServlet1</servlet-name>
+		<servlet-class>com.applicatioscope.ApplicationScopeServlet1</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ApplicationScopeServlet1</servlet-name>
+		<url-pattern>/ApplicationScopeServlet1</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<description></description>
+		<display-name>ApplicationScopeServlet2</display-name>
+		<servlet-name>ApplicationScopeServlet2</servlet-name>
+		<servlet-class>com.applicatioscope.ApplicationScopeServlet2</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ApplicationScopeServlet2</servlet-name>
+		<url-pattern>/ApplicationScopeServlet2</url-pattern>
+	</servlet-mapping>
+
+	<listener>
+		<listener-class>com.applicationscope.listeners.ContextListener</listener-class>
+	</listener>
+</web-app>

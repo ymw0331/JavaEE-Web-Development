@@ -1,0 +1,11 @@
+INDEX VERSION 1.131
+D:\Users\Administrator\STS Projects\Java Web Development\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3594232269.index
+\ErrorHandlingExample\src
+D:\Users\Administrator\STS Projects\Java Web Development\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2704603693.index
+\HTTPRequestExample\src
+D:\Users\Administrator\STS Projects\Java Web Development\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2176287399.index
+\FirstJEEApplication\src
+D:\Users\Administrator\STS Projects\Java Web Development\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4252694442.index
+\SessionTrackingExample\src
+D:\Users\Administrator\STS Projects\Java Web Development\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1253087644.index
+\FirstJEEApplication\src

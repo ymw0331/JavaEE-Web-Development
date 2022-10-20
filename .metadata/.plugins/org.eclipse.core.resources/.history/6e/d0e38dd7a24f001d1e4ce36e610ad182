@@ -1,0 +1,17 @@
+package com.applicationscope.listeners;
+
+import javax.servlet.ServletContextEvent;
+import javax.servlet.ServletContextListener;
+
+public class ContextListener implements ServletContextListener {
+
+	public void contextDestroyed(ServletContextEvent sce) {
+		System.out.println("Hi, Application is Started");
+	}
+
+	public void contextInitialized(ServletContextEvent sce) {
+		System.out.println("Hi, Application is Started");
+
+	}
+
+}

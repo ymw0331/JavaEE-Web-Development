@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	id="WebApp_ID" version="2.5">
+	<display-name>ErrorHandlingExample</display-name>
+	<servlet>
+		<description></description>
+		<display-name>ErrorHandling</display-name>
+		<servlet-name>ErrorHandling</servlet-name>
+		<servlet-class>com.errorhandlingexample.servlets.ErrorHandling</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ErrorHandling</servlet-name>
+		<url-pattern>/ErrorHandling</url-pattern>
+	</servlet-mapping>
+
+
+	<error-page>
+		<exception-type>com.errorhandlingexample.exceptions.MyException</exception-type>
+		<location>/myExceptionErrorPage.jsp</location>
+	</error-page>
+
+	<error-page>
+		<error-code>404</error-code>
+		<location>/pageNotFound.jsp</location>
+	</error-page>
+</web-app>

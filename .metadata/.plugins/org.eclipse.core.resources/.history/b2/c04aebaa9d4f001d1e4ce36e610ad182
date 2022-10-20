@@ -1,0 +1,5 @@
+package com.servletfilterexample.filters;
+
+public class MyFilter {
+
+}

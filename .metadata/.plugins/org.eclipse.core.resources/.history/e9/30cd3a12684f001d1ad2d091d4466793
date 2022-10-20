@@ -1,0 +1,5 @@
+package com.errorhandlingexample.exceptions;
+
+public class MyException {
+
+}
