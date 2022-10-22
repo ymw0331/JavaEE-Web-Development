@@ -60,7 +60,7 @@
          APR (HTTP/AJP) Connector: /docs/apr.html
          Define a non-SSL/TLS HTTP/1.1 Connector on port 8080
     -->
-    <Connector connectionTimeout="20000" port="8085" protocol="HTTP/1.1" redirectPort="8443"/>
+    <Connector connectionTimeout="20000" port="8086" protocol="HTTP/1.1" redirectPort="8443"/>
     <!-- A "Connector" using the shared thread pool-->
     <!--
     <Connector executor="tomcatThreadPool"
@@ -152,7 +152,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="SessionTrackingExample" path="/SessionTrackingExample" reloadable="true" source="org.eclipse.jst.jee.server:SessionTrackingExample"/><Context docBase="Servlet3Example" path="/Servlet3Example" reloadable="true" source="org.eclipse.jst.jee.server:Servlet3Example"/></Host>
+      <Context docBase="StandardAction-JavaBean" path="/StandardAction-JavaBean" reloadable="true" source="org.eclipse.jst.jee.server:StandardAction-JavaBean"/><Context docBase="StandardAction-IncludeForward" path="/StandardAction-IncludeForward" reloadable="true" source="org.eclipse.jst.jee.server:StandardAction-IncludeForward"/><Context docBase="JSTLActions-CoreExample" path="/JSTLActions-CoreExample" reloadable="true" source="org.eclipse.jst.jee.server:JSTLActions-CoreExample"/><Context docBase="JSTLActions-Core" path="/JSTLActions-Core" reloadable="true" source="org.eclipse.jst.jee.server:JSTLActions-Core"/><Context docBase="maven.jee" path="/maven.jee" reloadable="true" source="org.eclipse.jst.j2ee.server:maven.jee"/></Host>
     </Engine>
   </Service>
 </Server>
