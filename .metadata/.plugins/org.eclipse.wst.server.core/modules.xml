@@ -17,7 +17,9 @@
   <module moduleId="org.eclipse.jst.jee.server:StandardAction-IncludeExample" serverId="Tomcat v9.0 Server at localhost"/>
   <module moduleId="org.eclipse.jst.jee.server:FirstJSPApplication" serverId="Tomcat v9.0 Server at localhost"/>
   <module moduleId="org.eclipse.jst.jee.server:HTTPRequestExample" serverId="Tomcat v9.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:employee-crud-project" serverId="Tomcat v9.0 Server at localhost"/>
   <module moduleId="org.eclipse.jst.jee.server:SendRedirectExample" serverId="Tomcat v9.0 Server at localhost"/>
+  <module moduleId="org.eclipse.wst.web.internal.deployables.static:EmployeeCRUDDesign" serverId="J2EE Preview at localhost"/>
   <module moduleId="org.eclipse.jst.jee.server:SessionScopeExample" serverId="Tomcat v9.0 Server at localhost"/>
   <module moduleId="org.eclipse.jst.jee.server:IncludeForwardExample" serverId="Tomcat v9.0 Server at localhost"/>
   <module moduleId="org.eclipse.jst.jee.server:JSPDirectiveExample" serverId="Tomcat v9.0 Server at localhost"/>
